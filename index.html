@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>My First Project</title>
+        <link rel="stylesheet" href="survey.css">
+    
+    </head>
+    <body>
+    <header>
+            <h1 id="title">Survey Form</h1>
+            <p id="description">Thank you for taking the time to help us improve the platform</p>
+        
+            <div class="container">
+            <form id="survey-form">
+                <label id="name-label" for="name" class="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name">
+                
+                <label id="email-label"  for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your Email">
+                
+                <label id="number-label" for="age">Age</label>
+                <input type="number" id="number" name="age" placeholder="Age" min="10" max="99">
+                
+            
+                <label class="like">Which option best describes your current role?</label>
+                <select id="drop-down" class="select-control">
+                    <option disabled selected value>Select current role</option>
+                    <option>Student</option>
+                    <option>Full Time Job</option>
+                    <option>Full Time Learner</option>
+                    <option>Prefer not to say</option>
+                    <option>Other</option>
+                </select>
+            
+                <div>
+                <legend class="the-legend">How likely is that you would recommend freeCodeCamp to a friend?</legend><br>
+                    <div class="radio">
+                        <div class="flex1">
+                            <input type="radio" id="definitely" value= "opinion1" name="recommend" class="input-radio"><label for="definitely">Definitely</label></div>
+                        <div class="flex1">
+                            <input type="radio" id="maybe" class="input-radio" value="opinion2" name="recommend"><label for="maybe">Maybe</label></div>
+                        <div class="flex1">
+                            <input type="radio" id="notsure" class="input-radio" value="opinion3"  name="recommend"><label for="notsure">Not sure</label></div>
+                    </div>
+                </div>
+                    
+                <label class="like">What do you like most in FCC:</label>
+                <select class="select-control">
+                    <option disabled selected value>Select an option</option>
+                    <option value="challenges">Challenges</option>
+                    <option value="projects">Projects</option>
+                    <option value="community">Community</option>
+                    <option value="openSource">Open Source</option>
+                </select>
+                
+                <div>
+                <legend class="future">Things that should be improved in the future(Check all that apply)</legend>
+                    <div class="flex1">
+                        <input type="checkbox" id="front-endProjects" name="idea"><label for="front-endProjects">Front-end Projects</label></div>
+                    <div class="flex1">
+                        <input type="checkbox" id="back-endProjects" name="idea"> <label for="back-endProjects">Back-end Projects</label></div>
+                    <div class="flex1">
+                        <input type="checkbox" id="dataVisualization" name="idea"><label for="dataVisualization">Data Visualization</label></div>
+                    <div class="flex1">
+                        <input type="checkbox" id="challenges" name="idea"><label for="challenges">Challenges</label>
+                    </div>
+                    <div class="flex1">
+                        <input type="checkbox" id="open-sourceCommunity" name="idea">
+                        <label for="open-sourceCommunity">Open Source Community</label>
+                    </div>
+                    <div class="flex1">
+                        <input type="checkbox" id="gitter-helpRooms" name="idea">
+                        <label for="gitter-helpRooms">Gitter help rooms</label>
+                    </div>
+                    <div class="flex1">
+                        <input type="checkbox" id="videos" name="idea">
+                        <label for="videos">Videos</label>
+                    </div>
+                    <div class="flex1">
+                        <input type="checkbox" id="cityMeetups" name="idea">
+                        <label for="cityMeetups">City Meetups</label>
+                    </div>
+                    <div class="flex1">
+                        <input type="checkbox" id="wiki" name="idea">
+                        <label for="wiki">Wiki</label>
+                    </div>
+                    <div class="flex1">
+                        <input type="checkbox" id="forum" name="idea">
+                        <label for="forum">Forum</label>
+                    </div>
+                    <div class="flex1">
+                        <input type="checkbox" id="additionalCourses" name="idea">
+                        <label for="additionCourses">Additional Courses</label>
+                    </div>
+                </div>
+        
+                
+                <label for="comments" class="comment">Any comments or suggestions?</label>
+                <textarea id="comments" name="comments" class="input-textarea"  placeholder="Enter your comment here..."></textarea>
+                
+                <input id="submit" type="submit" value="Submit" class="input-submit">
+            </form>
+            
+            </div>
+        
+        </header>
+    
+    </body>
+
+</html>
